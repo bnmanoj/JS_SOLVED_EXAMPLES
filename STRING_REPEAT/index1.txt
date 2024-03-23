@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>String Repeat</title>
+</head>
+<body>
+<script>
+  // Function to repeat a string a certain number of times
+  function repeatString(str, num) {
+    return str.repeat(num);
+  }
+
+  // Example usage
+  const originalString = "Hello";
+  const repeatedString = repeatString(originalString, 3);
+  console.log("Original string:", originalString);
+  console.log("Repeated string:", repeatedString);
+</script>
+</body>
+</html>
