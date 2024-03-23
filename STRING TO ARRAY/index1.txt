@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>String to Array</title>
+</head>
+<body>
+<script>
+  // Function to convert a string to an array of characters
+  function stringToArray(str) {
+    return str.split('');
+  }
+
+  // Example usage
+  const originalString = "Hello";
+  const charArray = stringToArray(originalString);
+  console.log("Original string:", originalString);
+  console.log("Array of characters:", charArray);
+</script>
+</body>
+</html>
