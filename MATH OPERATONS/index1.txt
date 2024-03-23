@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Math Operations</title>
+</head>
+<body>
+<script>
+  // Function to perform basic math operations
+  function mathOperations(a, b) {
+    const sum = a + b; // Addition
+    const difference = a - b; // Subtraction
+    const product = a * b; // Multiplication
+    const quotient = a / b; // Division
+    return { sum, difference, product, quotient };
+  }
+
+  // Example usage
+  const num1 = 10;
+  const num2 = 5;
+  const results = mathOperations(num1, num2);
+  console.log("Sum:", results.sum);
+  console.log("Difference:", results.difference);
+  console.log("Product:", results.product);
+  console.log("Quotient:", results.quotient);
+</script>
+</body>
+</html>
