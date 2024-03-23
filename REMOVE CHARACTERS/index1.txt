@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Remove Characters</title>
+</head>
+<body>
+<script>
+  // Method 1: Using regular expressions
+  function removeCharactersRegExp(str, charsToRemove) {
+    const regex = new RegExp(`[${charsToRemove}]`, 'g');
+    return str.replace(regex, '');
+  }
+
+  // Method 2: Using simple string manipulation
+  function removeCharacters(str, charsToRemove) {
+    let result = '';
+    for (let i = 0; i < str.length; i++) {
+      if (!charsToRemove.includes(str[i])) {
+        result += str[i];
+      }
+    }
+    return result;
+  }
+
+  // Example usage
+  const originalString = "Hello, World!";
+  const charsToRemove = ",!"; // Characters to remove
+  const resultRegExp = removeCharactersRegExp(originalString, charsToRemove);
+  const result = removeCharacters(originalString, charsToRemove);
+  console.log("Original string:", originalString);
+  console.log("Result using RegExp:", resultRegExp);
+  console.log("Result using string manipulation:", result);
+</script>
+</body>
+</html>
