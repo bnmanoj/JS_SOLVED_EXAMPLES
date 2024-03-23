@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Total Points</title>
+</head>
+<body>
+<script>
+  // Function to calculate total points in a football league
+  function calculateTotalPoints(wins, draws, losses) {
+    return (wins * 3) + (draws * 1) + (losses * 0);
+  }
+
+  // Example usage
+  const wins = 5; // Number of wins
+  const draws = 3; // Number of draws
+  const losses = 2; // Number of losses
+  const totalPoints = calculateTotalPoints(wins, draws, losses);
+  console.log("Total points:", totalPoints);
+</script>
+</body>
+</html>
