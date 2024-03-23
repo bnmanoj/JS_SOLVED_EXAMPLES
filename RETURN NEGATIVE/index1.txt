@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Return Negative</title>
+</head>
+<body>
+<script>
+  // Function to return the negative of a number
+  function returnNegative(number) {
+    // If number is positive or zero, return its negative value
+    if (number >= 0) {
+      return -number;
+    } else {
+      // If number is negative, return the number itself
+      return number;
+    }
+  }
+
+  // Example usage
+  const num1 = 5;
+  const num2 = -7;
+  console.log("Negative of", num1, "is", returnNegative(num1));
+  console.log("Negative of", num2, "is", returnNegative(num2));
+</script>
+</body>
+</html>
