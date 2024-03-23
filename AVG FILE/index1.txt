@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Average of Array</title>
+</head>
+<body>
+<script>
+  // Function to calculate the average of an array of numbers
+  function calculateAverage(array) {
+    if (array.length === 0) {
+      return null; // Return null for an empty array
+    }
+    
+    let sum = 0;
+    for (let i = 0; i < array.length; i++) {
+      sum += array[i]; // Summing up all the numbers in the array
+    }
+    
+    return sum / array.length; // Calculate the average
+  }
+
+  // Example usage
+  const numbers = [5, 10, 15, 20];
+  const average = calculateAverage(numbers);
+  console.log("The average of the array is:", average);
+</script>
+</body>
+</html>
