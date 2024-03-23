@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reverse String</title>
+</head>
+<body>
+<script>
+  // Function to reverse a string
+  function reverseString(str) {
+    return str.split('').reverse().join('');
+  }
+
+  // Example usage
+  const originalString = "Hello, world!";
+  const reversedString = reverseString(originalString);
+  console.log("Original string:", originalString);
+  console.log("Reversed string:", reversedString);
+</script>
+</body>
+</html>
