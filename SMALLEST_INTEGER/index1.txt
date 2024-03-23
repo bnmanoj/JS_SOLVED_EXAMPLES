@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smallest Integer in Array</title>
+</head>
+<body>
+<script>
+  // Function to find the smallest integer in an array
+  function findSmallestInteger(array) {
+    // Check if the array is empty
+    if (array.length === 0) {
+      return null; // If array is empty, return null
+    }
+    let smallest = array[0]; // Assume the first element is the smallest
+    for (let i = 1; i < array.length; i++) {
+      if (array[i] < smallest) {
+        smallest = array[i]; // Update smallest if current element is smaller
+      }
+    }
+    return smallest;
+  }
+
+  // Example usage
+  const numbers = [5, 3, 9, 1, 7];
+  const smallestInteger = findSmallestInteger(numbers);
+  console.log("The smallest integer in the array is:", smallestInteger);
+</script>
+</body>
+</html>
