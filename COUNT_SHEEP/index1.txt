@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Counting Sheep</title>
+</head>
+<body>
+<script>
+  // Function to count sheep recursively
+  function countSheep(num) {
+    // Base case: if num is 0, stop counting
+    if (num === 0) {
+      console.log("All sheep have jumped over the fence.");
+      return;
+    }
+    // Output the current count
+    console.log(`${num}: Another sheep jumps over the fence.`);
+    // Recursive call with num - 1
+    countSheep(num - 1);
+  }
+
+  // Example usage
+  countSheep(5); // Start counting from 5
+</script>
+</body>
+</html>
