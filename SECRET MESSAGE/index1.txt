@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Secret Message</title>
+</head>
+<body>
+<script>
+  // Function to encrypt a message using Caesar cipher
+  function encryptMessage(message, shift) {
+    let encryptedMessage = "";
+    for (let i = 0; i < message.length; i++) {
+      let charCode = message.charCodeAt(i);
+      if (charCode >= 65 && charCode <= 90) { // Uppercase letters
+        charCode = ((charCode - 65 + shift) % 26) + 65;
+      } else if (charCode >= 97 && charCode <= 122) { // Lowercase letters
+        charCode = ((charCode - 97 + shift) % 26) + 97;
+      }
+      encryptedMessage += String.fromCharCode(charCode);
+    }
+    return encryptedMessage;
+  }
+
+  // Example usage
+  const originalMessage = "Hello, World!";
+  const shift = 3; // Shift each letter by 3 positions
+  const secretMessage = encryptMessage(originalMessage, shift);
+  console.log("Original message:", originalMessage);
+  console.log("Secret message:", secretMessage);
+</script>
+</body>
+</html>
