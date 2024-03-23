@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Remove Spaces</title>
+</head>
+<body>
+<script>
+  // Function to remove spaces from a string
+  function removeSpaces(str) {
+    return str.replace(/\s/g, '');
+  }
+
+  // Example usage
+  const originalString = "Hello, World!";
+  const stringWithoutSpaces = removeSpaces(originalString);
+  console.log("Original string:", originalString);
+  console.log("String without spaces:", stringWithoutSpaces);
+</script>
+</body>
+</html>
