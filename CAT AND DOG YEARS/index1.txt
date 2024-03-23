@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dog Years</title>
+</head>
+<body>
+<script>
+  // Function to convert human years into dog years
+  function humanToDogYears(humanYears) {
+    if (humanYears <= 0) {
+      return "Please enter a valid human age greater than 0.";
+    } else if (humanYears === 1) {
+      return "Your dog would be about 10.5 dog years old.";
+    } else if (humanYears === 2) {
+      return "Your dog would be about 21 dog years old.";
+    } else {
+      const firstTwoYears = 2 * 10.5;
+      const remainingYears = (humanYears - 2) * 4;
+      const totalDogYears = firstTwoYears + remainingYears;
+      return `Your dog would be about ${totalDogYears} dog years old.`;
+    }
+  }
+
+  // Example usage
+  const humanAge = 4; // Change this to test different ages
+  const dogAge = humanToDogYears(humanAge);
+  console.log(dogAge);
+</script>
+</body>
+</html>
