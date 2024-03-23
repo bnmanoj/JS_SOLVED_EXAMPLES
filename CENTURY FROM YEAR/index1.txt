@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Century from Year</title>
+</head>
+<body>
+<script>
+  // Function to determine the century from a given year
+  function centuryFromYear(year) {
+    // Calculate the century by dividing the year by 100 and rounding up
+    return Math.ceil(year / 100);
+  }
+
+  // Example usage
+  const year = 2023;
+  const century = centuryFromYear(year);
+  console.log(`The century from year ${year} is: ${century}`);
+</script>
+</body>
+</html>
