@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Get Planet ID</title>
+</head>
+<body>
+<script>
+  // Function to get the ID of a planet by its name
+  function getPlanetId(planetName) {
+    const planets = {
+      "mercury": 1,
+      "venus": 2,
+      "earth": 3,
+      "mars": 4,
+      "jupiter": 5,
+      "saturn": 6,
+      "uranus": 7,
+      "neptune": 8
+    };
+
+    // Convert the planet name to lowercase to ensure case-insensitivity
+    const lowerCasePlanetName = planetName.toLowerCase();
+
+    // Check if the planet exists in the object, if not return null
+    return planets.hasOwnProperty(lowerCasePlanetName) ? planets[lowerCasePlanetName] : null;
+  }
+
+  // Example usage
+  const planetName = "Earth";
+  const planetId = getPlanetId(planetName);
+  if (planetId !== null) {
+    console.log(`The ID of ${planetName} is ${planetId}.`);
+  } else {
+    console.log(`${planetName} is not a valid planet name.`);
+  }
+</script>
+</body>
+</html>
