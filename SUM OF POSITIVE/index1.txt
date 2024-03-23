@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sum of Positive Numbers</title>
+</head>
+<body>
+<script>
+  // Function to find the sum of positive numbers in an array
+  function sumOfPositiveNumbers(array) {
+    let sum = 0;
+    for (let i = 0; i < array.length; i++) {
+      if (array[i] > 0) {
+        sum += array[i];
+      }
+    }
+    return sum;
+  }
+
+  // Example usage
+  const numbers = [5, -3, 9, -1, 7];
+  const sumOfPositive = sumOfPositiveNumbers(numbers);
+  console.log("The sum of positive numbers in the array is:", sumOfPositive);
+</script>
+</body>
+</html>
